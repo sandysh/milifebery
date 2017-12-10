@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>MiVisions</title>
+  <link rel="shortcut icon" href="images/logo.png">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,800,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css' rel='stylesheet' type='text/css'>
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+  <nav class="navbar switch" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="logo-bg" href="index.html"></a>
+      </div>
+
+      <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right shrink">
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="index.html#our-services">Our Services</a> </li>
+          <li> <a href="about.html">Who We Are</a> </li>
+          <li> <a href="contact.html">Contact Us </a> </li>
+          <li> <a href="login.html">Login </a> </li>
+          <li> <a href="register.html">Register </a> </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="padding">
+    <div class="container">
+      <div class="form-header">
+        <h3>Processing services</h3>
+      </div>
+      <form class="payment" id="payment-form" method="post">
+        <fieldset id="info">
+          <h4>Your information</h4>
+
+          <ul>
+            <li>
+              <div class="input-button lvl1">
+                <div class="rounded">
+                  <input type="radio" name="info" value="indi" id="info1">
+                  <label for="info1"><i></i>
+                  </label>
+                </div>
+                <span>Individual</span>
+              </div>
+
+              <div class="expand">
+                <input type="text" name="first-name" id="first-name" required class="input-field form-control" placeholder="First name">
+                <input type="text" name="last-name" id="last-name" required class="input-field form-control" placeholder="Last name">
+                <input type="email" name="email" id="email" required class="input-field form-control" placeholder="Your email">
+                <input type="tel" name="phone" id="phone" required class="input-field form-control" placeholder="Phone">
+              </div>
+            </li>
+
+            <li>
+              <div class="input-button lvl1">
+                <div class="rounded">
+                  <input type="radio" name="info" value="indi" id="info2">
+                  <label for="info2"><i></i>
+                  </label>
+                </div>
+                <span>Company</span>
+              </div>
+
+              <div class="expand">
+                <input type="text" name="name" id="name" required class="input-field form-control" placeholder="Company name">
+                <input type="text" name="location" id="location" required class="input-field form-control" placeholder="Company's location">
+                <input type="text" name="contact" id="contact" required class="input-field form-control" placeholder="Contact person">
+                <input type="tel" name="phone" id="phone" required class="input-field form-control" placeholder="Phone number">
+                <input type="email" name="email" id="email" required class="input-field form-control" placeholder="Email">
+              </div>
+            </li>
+          </ul>
+
+        </fieldset>
+
+        <fieldset id="services">
+          <h4>Our Services</h4>
+
+          <ul>
+            <li>
+              <div class="input-button lvl1">
+                <div class="roundedTwo">
+                  <input type="checkbox" name="service" value="consult" id="service1">
+                  <label for="service1"><i class="fa fa-check"></i>
+                  </label>
+                </div>
+                <span>Consulting</span>
+                <a data-toggle="collapse" href="#service-collapse1" class="collapse-button" aria-expanded="false" aria-controls="service-collapse1">
+                  <i class="fa fa-minus"></i>
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+
+              <div class="collapse" id="service-collapse1">
+                <ul>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="consult-sub" value="" id="consult1">
+                        <label for="consult1"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Product-service Internationalization</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="consult-sub" value="" id="consult2">
+                        <label for="consult2"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Research and Development</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="consult-sub" value="" id="consult3">
+                        <label for="consult3"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Project planning and execution</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- End collapse -->
+
+            </li>
+
+            <li>
+              <div class="input-button lvl1">
+                <div class="roundedTwo">
+                  <input type="checkbox" name="service" value="milife" id="service2">
+                  <label for="service2"><i class="fa fa-check"></i>
+                  </label>
+                </div>
+                <span>Milife (Career Training and Job portals)</span>
+                <a data-toggle="collapse" href="#service-collapse2" class="collapse-button" aria-expanded="false" aria-controls="service-collapse2">
+                  <i class="fa fa-minus"></i>
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+
+              <div class="collapse" id="service-collapse2">
+                <ul>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="milife-sub" value="intern" id="milife1">
+                        <label for="milife1"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Internship<sup>ex</sup></span>
+                      <a data-toggle="collapse" href="#milife-collapse1" class="collapse-button" aria-expanded="false" aria-controls="milife-collapse1">
+                        <i class="fa fa-minus"></i>
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </div>
+
+                    <div id="milife-collapse1" class="collapse">
+                      <ul>
+                        <li class="col-md-6">
+                          <p>Europe</p>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="eu1">
+                              <label for="eu1"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Sustainable business design – Finland</span>
+                          </div>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="eu2">
+                              <label for="eu2"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Graphic design – Estonia</span>
+                          </div>
+                        </li>
+                        <li class="col-md-6">
+                          <p>North America</p>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="na1">
+                              <label for="na1"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Hotel & Tourism management - USA</span>
+                          </div>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="na2">
+                              <label for="na2"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>CMMS training – USA</span>
+                          </div>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="na3">
+                              <label for="na3"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Business operations – USA</span>
+                          </div>
+                        </li>
+                        <li class="col-md-6">
+                          <p>Asia</p>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="as1">
+                              <label for="as1"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Marketing and promotions- Vietnam</span>
+                          </div>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="as2">
+                              <label for="as2"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Enterprise Resource planning – India</span>
+                          </div>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="as3">
+                              <label for="as3"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Supply chain & Logistics-Vietnam</span>
+                          </div>
+                        </li>
+                        <li class="col-md-6">
+                          <p>Africa</p>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="af1">
+                              <label for="af1"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Petroleum marketing- Nigeria</span>
+                          </div>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="af2">
+                              <label for="af2"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Entrepreneurship – Nigeria</span>
+                          </div>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="af3">
+                              <label for="af3"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Human Resource management- Nigeria & Ghana</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="milife-sub" value="portal" id="milife2">
+                        <label for="milife2"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Job Portal</span>
+                      <a data-toggle="collapse" href="#milife-collapse2" class="collapse-button" aria-expanded="false" aria-controls="milife-collapse2">
+                        <i class="fa fa-minus"></i>
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </div>
+
+                    <div id="milife-collapse2" class="collapse">
+                      <ul>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="portal1">
+                              <label for="portal1"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Find a job</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="portal2">
+                              <label for="portal2"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Find employees</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="milife-sub" value="talent" id="milife3">
+                        <label for="milife3"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Talent Match</span>
+                      <a data-toggle="collapse" href="#milife-collapse3" class="collapse-button" aria-expanded="false" aria-controls="milife-collapse3">
+                        <i class="fa fa-minus"></i>
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </div>
+
+                    <div id="milife-collapse3" class="collapse">
+                      <ul>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="talent1">
+                              <label for="talent1"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Want to be our talent</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="talent2">
+                              <label for="talent2"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Find Talent</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="milife-sub" value="abroad" id="milife4">
+                        <label for="milife4"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Study Abroad</span>
+                      <a data-toggle="collapse" href="#milife-collapse4" class="collapse-button" aria-expanded="false" aria-controls="milife-collapse4">
+                        <i class="fa fa-minus"></i>
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </div>
+
+                    <div id="milife-collapse4" class="collapse">
+                      <ul>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="abroad1">
+                              <label for="abroad1"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Choose program</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="abroad2">
+                              <label for="abroad2"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Attend pre-departure seminars</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="abroad3">
+                              <label for="abroad3"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Contact career advisor</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="abroad4">
+                              <label for="abroad4"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Additional services</span>
+                            <a data-toggle="collapse" href="#add-collapse" class="collapse-button" aria-expanded="false" aria-controls="add-collapse">
+                              <i class="fa fa-minus"></i>
+                              <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+
+                          <div id="add-collapse" class="collapse">
+                            <ul>
+                              <li>
+                                <div class="input-button lvl4">
+                                  <div class="roundedTwo">
+                                    <input type="checkbox" name="milife-sub-sub-sub" value="" id="add1">
+                                    <label for="add1"><i class="fa fa-check"></i>
+                                    </label>
+                                  </div>
+                                  <span>Book flight travel</span>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="input-button lvl4">
+                                  <div class="roundedTwo">
+                                    <input type="checkbox" name="milife-sub-sub-sub" value="" id="add2">
+                                    <label for="add2"><i class="fa fa-check"></i>
+                                    </label>
+                                  </div>
+                                  <span>Book accommodation</span>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="input-button lvl4">
+                                  <div class="roundedTwo">
+                                    <input type="checkbox" name="milife-sub-sub-sub" value="" id="add3">
+                                    <label for="add3"><i class="fa fa-check"></i>
+                                    </label>
+                                  </div>
+                                  <span>Plan your travel insurance</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="milife-sub" value="mentor" id="milife5">
+                        <label for="milife5"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Mentoring & Coaching</span>
+                      <a data-toggle="collapse" href="#milife-collapse5" class="collapse-button" aria-expanded="false" aria-controls="milife-collapse5">
+                        <i class="fa fa-minus"></i>
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </div>
+
+                    <div id="milife-collapse5" class="collapse">
+                      <ul>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="mentor1">
+                              <label for="mentor1"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Training the Trainer</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="mentor2">
+                              <label for="mentor2"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>R&D Support</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="mentor3">
+                              <label for="mentor3"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Career sustainability</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="milife-sub" value="course" id="milife6">
+                        <label for="milife6"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Short Courses</span>
+                      <a data-toggle="collapse" href="#milife-collapse6" class="collapse-button" aria-expanded="false" aria-controls="milife-collapse6">
+                        <i class="fa fa-minus"></i>
+                        <i class="fa fa-plus"></i>
+                      </a>
+                    </div>
+
+                    <div id="milife-collapse6" class="collapse">
+                      <ul>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="course1">
+                              <label for="course1"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Enterprise Resource Planning</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="course2">
+                              <label for="course2"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Sustainable Business design</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="course3">
+                              <label for="course3"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Solar Panel Sales and Procurement</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="course4">
+                              <label for="course4"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Solar Panel Installation Training</span>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="input-button lvl3">
+                            <div class="roundedTwo">
+                              <input type="checkbox" name="milife-sub-sub" value="" id="course5">
+                              <label for="course5"><i class="fa fa-check"></i>
+                              </label>
+                            </div>
+                            <span>Work health and Safety training (OHSC)</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="input-button lvl1">
+                <div class="roundedTwo">
+                  <input type="checkbox" name="service" value="mihub" id="service3">
+                  <label for="service3"><i class="fa fa-check"></i>
+                  </label>
+                </div>
+                <span>MiHub</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="input-button lvl1">
+                <div class="roundedTwo">
+                  <input type="checkbox" name="service" value="it" id="service4">
+                  <label for="service4"><i class="fa fa-check"></i>
+                  </label>
+                </div>
+                <span>IT Support</span>
+                <a data-toggle="collapse" href="#service-collapse4" class="collapse-button" aria-expanded="false" aria-controls="service-collapse4">
+                  <i class="fa fa-minus"></i>
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+
+              <div class="collapse" id="service-collapse4">
+                <ul>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="it-sub" value="" id="it1">
+                        <label for="it1"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Web design</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="it-sub" value="" id="it2">
+                        <label for="it2"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Web development</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="it-sub" value="" id="it3">
+                        <label for="it3"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Online Marketing</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="it-sub" value="" id="it4">
+                        <label for="it4"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Web hosting</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="it-sub" value="" id="it5">
+                        <label for="it5"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Landing Pages</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="it-sub" value="" id="it6">
+                        <label for="it6"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>CMS</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="input-button lvl2">
+                      <div class="roundedTwo">
+                        <input type="checkbox" name="it-sub" value="" id="it7">
+                        <label for="it7"><i class="fa fa-check"></i>
+                        </label>
+                      </div>
+                      <span>Graphic design for marketing materials</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="input-button lvl1">
+                <div class="roundedTwo">
+                  <input type="checkbox" name="service" value="mobile" id="service5">
+                  <label for="service5"><i class="fa fa-check"></i>
+                  </label>
+                </div>
+                <span>Mobile App</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="input-button lvl1">
+                <div class="roundedTwo">
+                  <input type="checkbox" name="service" value="market" id="service6">
+                  <label for="service6"><i class="fa fa-check"></i>
+                  </label>
+                </div>
+                <span>Market Place</span>
+                <a data-toggle="collapse" href="#service-collapse6" class="collapse-button" aria-expanded="false" aria-controls="service-collapse6">
+                  <i class="fa fa-minus"></i>
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+
+              <div class="collapse" id="service-collapse6">
+                <textarea name="message" id="message" class="input-field form-control" placeholder="Announce your project" rows="8"></textarea>
+              </div>
+            </li>
+          </ul>
+
+        </fieldset>
+
+        <fieldset>
+          <h4>Payment options</h4>
+
+          <ul>
+            <li>
+              <div class="input-button lvl1">
+                <div class="rounded">
+                  <input type="radio" name="pay-option" value="package" id="pay-option1">
+                  <label for="pay-option1"><i></i>
+                  </label>
+                </div>
+                <span>Apply for full package</span>
+              </div>
+            </li>
+            <li>
+              <div class="input-button lvl1">
+                <div class="rounded">
+                  <input type="radio" name="pay-option" value="consult" id="pay-option2">
+                  <label for="pay-option2"><i></i>
+                  </label>
+                </div>
+                <span>Apply for consulting service</span>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <h4>Payment method</h4>
+
+          <ul>
+            <li>
+              <div class="input-button lvl1">
+                <div class="rounded">
+                  <input type="radio" name="pay-method" value="paypal" id="pay-method1">
+                  <label for="pay-method1"><i></i>
+                  </label>
+                </div>
+                <span>PayPal</span>
+              </div>
+            </li>
+            <li>
+              <div class="input-button lvl1">
+                <div class="rounded">
+                  <input type="radio" name="pay-method" value="card" id="pay-method2">
+                  <label for="pay-method2"><i></i>
+                  </label>
+                </div>
+                <span>Credit Card</span>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="input-button lvl1">
+          <div class="roundedTwo">
+            <input type="checkbox" name="term" value="term" id="term">
+            <label for="term"><i class="fa fa-check"></i>
+            </label>
+          </div>
+          <span>I have read and agree with <a href="terms.html" target="_blank">Terms and Conditions</a></span>
+        </div>
+
+        <div class="input-button lvl1">
+          <div class="roundedTwo">
+            <input type="checkbox" name="subs" value="subs" id="subs">
+            <label for="subs"><i class="fa fa-check"></i>
+            </label>
+          </div>
+          <span>Subscribe for newsletter</span>
+        </div>
+
+        <button type="submit" class="form-btn lg hvr-radial-out">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="container">
+
+      <!-- Useful links -->
+      <div class="col-md-6">
+        <ul class="links">
+          <li><a href="about.html">About Us</a>
+          </li>
+          <li>|</li>
+          <li><a href="terms.html">Terms Of Use</a>
+          </li>
+          <li>|</li>
+          <li><a href="privacy.html">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social media -->
+      <div class="col-md-6">
+        <ul class="social-media">
+          <li>
+            <a href="https://www.facebook.com/pages/Mivisions International/834080156605831?__mref=message_bubble">
+              <div class="facebook"><i class="fa fa-facebook"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="twitter"><i class="fa fa-twitter"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="google-plus"><i class="fa fa-google-plus"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/mivisions-international?trk=company_logo">
+              <div class="linked-in"><i class="fa fa-linkedin"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="copyright">
+    <div class="container">
+      <center>
+        <h5><span>© 2015 <a href="index.html">Mivisions.eu</a></span></h5>
+      </center>
+    </div>
+    <a href="#" class="scrollToTop"><i class="fa fa-arrow-up"></i></a>
+  </div>
+
+  <footer>
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <script src="js/jquery.knob.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script>
+      $("form").validate();
+    </script>
+    <!-- Custom Javascript -->
+    <script src="js/core.js"></script>
+    <script src="js/scrollReveal.min.js"></script>
+    <script>
+      window.sr = new scrollReveal();
+    </script>
+  </footer>
+
+</body>
+
+</html>

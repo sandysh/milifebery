@@ -1,0 +1,395 @@
+.col-md-5 {
+  width: 45%;
+}
+
+.col-md-7 {
+  width: 55%;
+}
+
+#milife-sub-header .row {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: inline-block;
+}
+
+#milife-sub-header .milife-sub-title {
+  padding: 17px 0 0 12.5%;
+  position: absolute;
+  height: 100%;
+}
+
+#milife-sub-header .milife-sub-title h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+#milife-sub-header .milife-sub-des {
+  background-color: rgba(16, 197, 130, 0.6);
+  padding: 38px 12.5% 10px 24px;
+  position: relative;
+  float: right;
+  min-height: 185px;
+}
+
+#milife-sub-header .milife-sub-des p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.learn .bg {
+  background-color: #000;
+  opacity: 0.5;
+}
+
+#offers .col-md-5 span {
+  font-size: 110px;
+  font-weight: 300;
+  float: left;
+  padding-right: 22px;
+}
+
+#offers .col-md-5 h1 {
+  color: #303030;
+  font-size: 55px;
+  font-weight: 300!important;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+#offers .col-md-5 h2 {
+  color: #303030;
+  font-size: 37px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+#offers .col-md-7 li {
+  position: relative;
+  display: list-item;
+  color: #303030;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 30px 0px 30px 0px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+#offers .col-md-7 li:last-child {
+  padding-bottom: 0px;
+  border: none;
+  background-position: bottom left;
+}
+#offers .col-md-7 li button {
+  padding: 0;
+  text-align: left;
+}
+#offers .col-md-7 li i{
+  padding-right: 24px;
+  font-size: 30px;
+  line-height: 30px;
+}
+#offers .col-md-7 li p{
+  display: inline;
+}
+
+#offers .col-md-7 li a {
+  color: #249aea;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  right: 0px;
+  top: 35px;
+  position: absolute;
+}
+
+#offers .offer-more li {
+  text-transform: none;
+  font-weight: 400;
+  border: none;
+  padding: 15px 0 15px 70px;
+}
+/*////////////////////////////////
+Learn
+////////////////////////////////*/
+
+.learn {
+  position: relative;
+  display: inline-block;
+  /*min-height: 610px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/milife-home/partner-bg.png);
+}
+
+.learn .col-md-4 {
+  position: relative;
+  padding: 54px 20px 54px 45px;
+  margin-right: 20%;
+  margin-left: 13.3%;
+  height: 100%;
+}
+
+.learn .col-md-4 h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0px;
+}
+
+#testimonial-carousel {
+  padding-bottom: 0px;
+  height: 100%;
+  max-height: 605px;
+  background: -webkit-radial-gradient(circle closest-side at 50%, #fafafa 32%, #eceded 100%);
+  background: -webkit-radial-gradient(50%, circle closest-side, #fafafa 32%, #eceded 100%);
+  background: radial-gradient(circle closest-side at 50%, #fafafa 32%, #eceded 100%);
+}
+
+#testimonial-carousel .owl-controls {
+  position: absolute;
+  top: 65%;
+  left: 18%;
+}
+
+#testimonial-carousel .owl-controls .owl-page.active span {
+  background-color: #12cacc;
+}
+
+.intern {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.intern img {
+  position: absolute;
+  left: 35%;
+  height: 600px;
+}
+
+.intern-overlays {
+  position: absolute;
+  left: 18%;
+  width: 400px;
+}
+
+.intern-overlays h1 {
+  color: #249aea;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.intern-overlays h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px 0px;
+}
+
+.intern-overlays label {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.intern-overlays h2 {
+  font-size: 24px;
+  margin: 20px 0px 0px 0px;
+}
+
+#contact {
+  height: 666px;
+  position: relative;
+}
+
+#contact .bg {
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#contact .col-md-6 {
+  padding: 0px;
+}
+
+#contact .col-md-2 {
+  padding: 0px;
+}
+
+#contact .contact-bg {
+  height: 222px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact .contact-action {
+  height: 444px;
+  padding: 66px 53px 66px 66px;
+  z-index: 2;
+}
+
+#contact .contact-action:hover img, #contact .contact-action:focus img{
+  -webkit-transform: scaleX(1.25) translateX(5px);
+  -ms-transform: scaleX(1.25) translateX(5px);
+  transform: scaleX(1.25) translateX(5px);
+}
+
+#contact .contact-action p {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 60px;
+}
+
+#contact .contact-action img {
+  margin-top: 25px;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+}
+/*////////////////////////////////
+Media Rules
+////////////////////////////////*/
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .col-md-5 {
+    width: 100%;
+  }
+  .col-md-7 {
+    width: 100%;
+  }
+  .learn .col-xs-12 {
+    margin: 0px;
+  }
+  #milife-sub-header .row .col-md-5 {
+    padding: 10px 20px;
+    height: auto;
+  }
+  #milife-sub-header .row .col-md-5 h1 {
+    font-size: 35px;
+  }
+  #milife-sub-header .row .col-md-7 {
+    padding: 10px 20px;
+    height: auto;
+  }
+  #milife-sub-header .row .col-md-7 p {
+    font-size: 18px;
+  }
+  #offers .col-md-5 h1 {
+    font-size: 50px;
+    text-align: left;
+  }
+  #offers .col-md-7 li p {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  #testimonial-carousel {
+    position: relative;
+  }
+  #testimonial-carousel .bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0px;
+  }
+  .intern img {
+    height: 100%;
+    left: 0;
+    z-index: -1;
+  }
+  .intern-overlays {
+    left: 0px;
+    bottom: 0px;
+    padding: 20px 0px 10px 40px;
+  }
+  .intern-overlays h1 {
+    font-size: 40px;
+    text-align: left;
+  }
+  .intern-overlays h3 {
+    color: #fff;
+    font-size: 22px;
+  }
+  .intern-overlays label {}
+  .intern-overlays h2 {
+    margin: 5px 0px;
+    line-height: 30px;
+    color: #fff;
+  }
+  #contact {
+    display: table;
+  }
+  #contact .bg {
+    opacity: 0.75;
+  }
+  #contact .contact-action {
+    padding: 20px 0px 20px 40px;
+    background: none;
+    -webkit-transform: translateY(-80%);
+    -ms-transform: translateY(-80%);
+    transform: translateY(-80%);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .col-md-5 {
+    width: 100%;
+  }
+  .col-md-7 {
+    width: 100%;
+  }
+  .learn .col-xs-12 {
+    margin: 0px;
+  }
+  #milife-sub-header .row .col-md-5 {
+    padding: 10px 20px;
+    height: auto;
+  }
+  #milife-sub-header .row .col-md-5 h1 {
+    font-size: 35px;
+  }
+  #milife-sub-header .row .col-md-7 {
+    padding: 10px 20px;
+    height: auto;
+  }
+  #milife-sub-header .row .col-md-7 p {
+    font-size: 18px;
+  }
+  #offers .col-md-5 h1 {
+    font-size: 50px;
+    text-align: left;
+  }
+  #offers .col-md-7 li p {
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  .intern {
+    left: 20px;
+    right: 20px;
+  }
+  .intern img {
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  #contact {
+    display: table;
+  }
+  #contact .bg {
+    opacity: 0.75;
+  }
+  #contact .contact-action {
+    padding: 20px 0px 20px 40px;
+    background: none;
+    -webkit-transform: translateY(-80%);
+    -ms-transform: translateY(-80%);
+    transform: translateY(-80%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {}

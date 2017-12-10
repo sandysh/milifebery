@@ -1,0 +1,138 @@
+#mobile-download {
+  padding-top: 120px;
+  background: url(../images/mobile/mobile-download-bg.png) no-repeat;
+  background-size: cover;
+}
+
+#mobile-download .tab-links li {
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+
+#mobile-download .tab-links li a {
+  border-bottom: 2px solid transparent;
+  padding: 15px;
+  color: #2c3546;
+  font-size: 25px;
+  background-color: transparent;
+}
+
+#mobile-download .tab-links li a .top {
+  position: absolute;
+  opacity: 0;
+}
+
+#mobile-download .tab-links li.active a .top {
+  opacity: 1;
+}
+
+#mobile-download .tab-links li .platform {
+  display: none;
+}
+
+#mobile-download .tab-links li.active a {
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+#mobile-download .tab-links li.active .platform {
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: none;
+  text-align: center;
+}
+
+#mobile-download .tab-content {
+  margin-top: 100px;
+  width: 100%;
+  background-color: transparent;
+}
+
+#mobile-download .mobile-download-img img {
+  padding-left: 20px;
+  width: 85%;
+}
+
+#mobile-download .mobile-download-info h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#mobile-download .mobile-download-info p {
+  padding: 10px 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 39px;
+}
+
+#mobile-download .mobile-download-info .btn {
+  border-radius: 30px;
+  border: 3px solid #249aea;
+  padding: 12px 50px;
+  color: #249aea;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+#mobile-download .mobile-download-info .btn:hover {
+  border: 3px solid #23527C;
+  color: #23527C;
+}
+
+#mobile-features {
+  background-color: #f8f8f9;
+}
+
+#mobile-features .mobile-features-img img {
+  margin-top: 40px;
+  width: 100%;
+}
+
+#mobile-features .mobile-features-img,
+#mobile-features .mobile-features-text {
+  padding: 0;
+}
+
+#mobile-features .mobile-features-text h2 {
+  color: #727272;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#mobile-features .info {
+  display: inline-block;
+  position: relative;
+  margin: 40px 0;
+}
+
+#mobile-features .info .feature {
+  display: inline-block;
+  margin-bottom: 10px;  
+}
+
+#mobile-features .info .feature img{
+  width: 42px;
+  float: left;
+  margin-top: 40px;
+}
+
+#mobile-features .info .feature .body {
+  float: left;
+  width: 85%;
+  padding: 0 20px 0 40px;
+}
+
+#mobile-features .info .feature .body h3 {
+  color: #008cc7;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0 0 20px 0;
+}

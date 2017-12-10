@@ -1,0 +1,213 @@
+/*--------------------------------------------------------
+ * Responsive CSS Fixes
+ *--------------------------------------------------------
+ */
+
+@media only screen and (max-width: 991px) {
+    #milife-header .tab-links li {
+        width: 33.33%;
+    }
+
+    #milife-price-carousel .owl-controls .owl-buttons .owl-prev {
+        left: 0;
+    }
+
+    #milife-price-carousel .owl-controls .owl-buttons .owl-next {
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    body #contact {
+        height: inherit;
+    }
+
+    body #contact:before,
+    body #contact:after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+
+    body #contact .contact-action {
+        height: inherit;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body .navbar-collapse {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -o-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+    }
+
+    body .navbar-nav {
+        padding: 30px;
+    }
+
+    body #milife-header,
+    body #milife-sub-header {
+        background: #f9f9f9;
+        height: initial !important;
+    }
+
+    body #milife-header.full-bg .bg,
+    body #milife-sub-header.full-bg .bg {
+        background-color: #fff;
+        height: 60vh;
+        min-height: 400px;
+        position: relative;
+    }
+
+    body #milife-header.full-bg .tabs {
+        position: relative;
+        top: inherit;
+        width: 100%;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    body #milife-sub-header .row {
+        position: relative;
+    }
+
+    body #milife-sub-header .milife-sub-title {
+        position: relative;
+    }
+
+    body #milife-header.full-bg .tabs .container {
+        background: #fff;
+        padding: 20px 15px;
+    }
+
+    /*body #milife-header.full-bg .tabs .container {*/
+    /*display: table;*/
+    /*}*/
+    /*body #milife-header.full-bg .tabs .tab-content {*/
+    /*display: table-footer-group;*/
+    /*}*/
+    /*body #milife-header.full-bg .tabs .tab-links {*/
+    /*display: table-header-group;*/
+    /*}*/
+    body #milife-header.full-bg .tab-links li {
+        width: 50%;
+        display: table;
+    }
+
+    body #milife-header.full-bg .tab-links li a {
+        font-size: 14px;
+        height: 70px;
+        line-height: 1.2;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    body .learn .col-md-4 {
+        margin-right: auto;
+        margin-left: auto;
+        width: 75%;
+        float: none !important;
+    }
+
+    body .learn.full-bg .col-md-4 h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    body #milife-sub-header .milife-sub-des p,
+    body #milife-header .tab-content p,
+    body section.learn.ful-bg h2 {
+        font-size: 14px !important;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+
+    body .padding {
+        padding: 50px 0px;
+    }
+
+    body .intern-overlays {
+        bottom: 40px;
+        max-width: 300px;
+        padding: 20px 0px 0 40px;
+    }
+
+    body .intern-overlays h1 {
+        text-align: left;
+    }
+
+    #testimonial-carousel .owl-controls {
+        top: inherit;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 9;
+    }
+
+    body #contact {
+        width: 100%;
+    }
+
+    body #contact .contact-action p,
+    body #contact .contact-action a {
+        display: inline-block;
+    }
+
+    body #contact .contact-action p {
+        font-size: 34px;
+        line-height: 1.4;
+    }
+
+    body #offers .col-md-5 span {
+        font-size: 82px;
+    }
+
+    body #offers .col-md-5 h1 {
+        font-size: 34px;
+    }
+
+    body #offers .offer-more li {
+        padding-left: 0;
+    }
+
+    body .tab .btn {
+        display: block;
+        margin: 10px auto;
+    }
+
+    body .scrollToTop {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    /*Temporory-fix*/
+    #contact .col-md-12 .contact-bg:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body .learn .col-md-4 {
+        width: 85%;
+        padding-left: 20px;
+    }
+
+    body .intern-overlays h1 {
+        font-size: 26px;
+    }
+
+    body .intern-overlays h2 {
+        font-size: 22px;
+    }
+
+    body .intern-overlays h3 {
+        font-size: 18px;
+    }
+}

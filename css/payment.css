@@ -1,0 +1,161 @@
+fieldset {
+  border: 2px solid #249aea;
+  padding: 15px 25px;
+}
+
+form h4 {
+  margin: 0 0 25px 0;
+  border-bottom: 2px solid #249aea;
+  padding-bottom: 10px;
+  color: #249aea;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+form .expand {
+  display: none;
+}
+
+form .collapse.in {
+  display: table;
+}
+
+form .collapse {
+  padding-bottom: 20px;
+}
+
+form ul li {
+  display: list-item;
+}
+
+form .collapse ul li,
+form .collapsing ul li {
+  padding-left: 40px;
+}
+
+#service-collapse2 ul li span {
+  color: #303030;
+}
+
+form .input-button {
+  position: relative;
+}
+
+form .input-button .collapse-button {
+  display: table-cell;
+  vertical-align: middle;
+  color: #249aea;
+  font-size: 22px;
+}
+
+form .input-button .collapse-button[aria-expanded="false"] .fa-minus { display: none; }
+form .input-button .collapse-button[aria-expanded="true"]  .fa-minus { display: block; }
+
+form .input-button .collapse-button[aria-expanded="false"] .fa-plus { display: block; }
+form .input-button .collapse-button[aria-expanded="true"]  .fa-plus { display: none; }
+
+form .input-button span {
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 400;
+  padding: 15px 20px;
+}
+
+form .input-button.lvl1 span { font-size: 20px; }
+form .input-button.lvl2 span { font-size: 16px; }
+form .input-button.lvl3 span { font-size: 14px; }
+
+form .input-button.checked span {
+  font-weight: 700;
+}
+
+#milife-collapse1 p {
+  margin: 5px 0;
+  padding-top: 25px;
+  color: #249aea;
+}
+
+#service-collapse6 {
+  width: 100%;
+}
+
+#payment-form .form-btn {
+  margin: 50px 0;
+  border-radius: 0;
+  width: 50%;
+}
+
+/* ROUNDED */
+
+.rounded {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+}
+
+.rounded input[type="radio"] {
+  visibility: hidden;
+}
+
+.rounded label {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  border-radius: 50%;
+  border: 2px solid #249aea;
+}
+
+.rounded label i {
+  visibility: hidden;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: #249aea;
+}
+
+.rounded input[type=radio]:checked + label i {
+  visibility: visible;
+}
+/* roundedTwo */
+
+.roundedTwo {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+}
+
+.roundedTwo input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.roundedTwo label {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  border: 2px solid #249aea;
+}
+
+.roundedTwo label i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 2px;
+}
+
+.roundedTwo input[type=checkbox]:checked + label {
+  background-color: #249aea;
+}

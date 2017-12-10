@@ -1,0 +1,45 @@
+.milife-4-bg {
+  background-color: #ea4b2b;
+}
+#milife-sub-header .milife-sub-des {
+  background-color: rgba(234, 75, 43, 0.6);
+}
+#offers .col-md-5 span {
+  color: #ea4b2b;
+}
+#offers .col-md-7 li i {
+  color: #ea4b2b;
+}
+#offers a {
+  font-size: 30px;
+  color: #ea4b2b;
+}
+#offers a i {
+  font-size: 40px;
+}
+#offers a:hover {
+}
+.learn .col-md-4 {
+  background-color: rgba(234, 75, 43, 0.6)!important;
+}
+.intern-overlays h3 {
+  font-size: 18px;
+}
+.intern-overlays h2 {
+  font-size: 18px;
+  line-height: 20px;
+}
+.intern-overlays h4 {
+  font-size: 14px;
+  color: #303030;
+  margin-top: 32px;
+}
+.intern-overlays .btn {
+  margin-top: 20px; 
+  color: #fff;
+  padding: 5px 15px;
+  background-color: #249aea;
+}
+#testimonial-carousel .owl-controls {
+  top: 85%;
+}

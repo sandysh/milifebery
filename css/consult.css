@@ -1,0 +1,204 @@
+.register {
+  position: relative;
+  padding-top: 50px;
+  background-color: #2c3546;
+  background-image: url(../images/consult/Register-bg.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.register .btn {
+  margin-top: 20px;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #249aea;
+  width: 138px;
+  height: 49px;
+  padding-top: 10px;
+}
+.register .btn:hover, .register .btn:focus {
+  background-color: #025894;
+}
+.register h1 {
+  color: #d5d5d5;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+}
+.consult .col-md-12 {
+  padding-bottom: 100px;
+}
+
+/*----- Tabs ------*/
+.tabs {
+  width: 100%;
+}
+
+/*----- Tab Contents ------*/
+#descriptions {
+  padding-left: 50px;
+}
+.tabs button {
+  margin: auto;
+  margin-bottom: 20px;
+  color:  #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 2px;
+  border: none;
+  background-color: #249aea;
+  width: 138px;
+  height: 49px;
+}
+
+
+/*----- Tab Links ------*/
+.numbers {
+  border-right: 1px solid rgba(35, 154, 234, 0.6);
+}
+.tabs li h1 {
+  margin-top: 75px;
+  color:  #ecebeb;
+  font-size: 72px;
+}
+.tabs li h3 {
+  margin: 14px 0px 25px 0px;
+  color: #838383;
+  font-size: 24px;
+}
+li.active h1, li.active h1:hover {
+  color: #239aea;
+}
+li.active h3, li.active h3:hover {
+  color: #303030;
+}
+
+/*----- Tab contents ------*/
+.tab .img-responsive {
+  margin-bottom: 40px;
+  width: 100%;
+}
+.tab p {
+  color: #484848;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.tab li {
+  padding-left: 30px;
+  display: list-item;
+  color: #484848;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 48px;
+  list-style: inside url(../images/consult/icon-send.png);
+}
+.tab li:first-child {
+  margin-top: 40px;
+}
+.tab {
+  display: none;
+}
+.tab.active {
+  display: block;
+}
+
+@media (min-width:320px) and (max-width:479px) {
+  .numbers {
+    border: none;
+  }
+  .tab-links li {
+    width: 100%;
+    text-align: center;
+  }
+  .tabs li h1 {
+   margin-top: 50px;
+   font-size: 54px;
+  }
+  .tabs li h3 {
+   margin: 10px 0px 20px 0px;
+   font-size: 18px;
+  }
+  #descriptions {
+    padding-left: 0px;
+  }
+  .tab li {
+    padding-left: 0px;
+  }
+  .register .bg {
+    background-color: rgba(44,53,70,0.5);
+  }
+  .register .col-md-12 {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .register .col-md-2 {
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width:480px) and (max-width:767px) {
+  .numbers {
+    border: none;
+  }
+  .tab-links li {
+    width: 100%;
+    text-align: center;
+  }
+  .tabs li h1 {
+   margin-top: 50px;
+   font-size: 54px;
+  }
+  .tabs li h3 {
+   margin: 10px 0px 20px 0px;
+   font-size: 18px;
+  }
+  #descriptions {
+    padding-left: 0px;
+  }
+  .tab li {
+    padding-left: 0px;
+  }
+  .register .bg {
+    background-color: rgba(44,53,70,0.5);
+  }
+  .register .col-md-12 {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .register .col-md-2 {
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .numbers {
+    border: none;
+  }
+  #descriptions {
+    padding-left: 0px;
+  }
+  .tab-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .register .bg {
+    background-color: rgba(44,53,70,0.2);
+  }
+}

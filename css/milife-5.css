@@ -1,0 +1,45 @@
+.milife-5-bg {
+  background-color: #f9b73e;
+}
+#milife-sub-header .milife-sub-des {
+  background-color: rgba(249, 183, 62, 0.6);
+}
+#offers .col-md-5 span {
+  color: #f9b73e;
+}
+#offers .col-md-7 li i {
+  color: #f9b73e;
+}
+#school-partner {
+  background-color: #f8f8f8;
+}
+#partner-title > *{
+  text-transform: uppercase;
+  font-weight: 300!important;
+  line-height: 45px;
+  margin: 0;
+}
+#school-filter button {
+  padding: 5px 13px;
+  margin: 5px 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#school-filter button.active {
+  color: #fff;
+  background-color: #f9b73e;
+}
+#school-logos {
+  position: relative;
+  padding-top: 70px;
+  display: inline-block;
+}
+.school-logo {
+  position: relative;
+  width: 20%;
+  padding: 30px 0;
+  float: left;
+}
+.learn .col-md-4 {
+  background-color: rgba(249, 183, 62, 0.6)!important;
+}

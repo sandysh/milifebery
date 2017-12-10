@@ -1,0 +1,96 @@
+.breadcrumb {
+  background-color: transparent;
+}
+
+.form-checkout {
+  margin-bottom: 100px;
+}
+
+.tab-links li a {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.tab-links li.active a {
+  color: #fff;
+  background-color: #008cc7;
+}
+
+.tab-cotent {
+  margin-top: 40px;
+}
+
+.form-checkout h2 {
+  color: #2f373d;
+  font-size: 18px;
+}
+
+.form-group .col-md-6, .form-group .col-md-12 {
+  padding: 0 10px;
+}
+
+.form-checkout .submit-btn {
+  background-color: #f44f4f;
+}
+
+form.methods label {
+  display: inline-block;
+}
+
+form.methods .form-group p {
+  display: none;
+  padding-left: 25px;
+  color: #9ba7af;
+  font-size: 13px;
+}
+
+form.methods .form-group.active p {
+  display: block;
+}
+
+form.confirm .order .form-group {
+  display: inline-block;
+  border: 1px solid #ebeff0;
+}
+
+form.confirm .order .form-group h4,
+form.confirm .order .form-group p {
+  font-family: "Lato" !important;
+}
+
+form.confirm .order h4 {
+  margin: 5px 0;
+  color: #2f373d;
+  font-size: 13px;
+}
+
+form.confirm .order p {
+  color: #9ba7af;
+  font-size: 13px;
+}
+
+form.confirm .order .total {
+  color: #f44f4f;
+  font-size: 18px;
+}
+
+form.confirm .ship {
+  padding-left: 80px;
+}
+
+form.confirm .ship p {
+  color: #303030;
+}
+
+form.confirm .ship span {
+  color: #838383;
+}
+
+form.confirm .ship a {
+  display: block;
+  padding-top: 20px;
+  color: #303030;
+  text-decoration: underline;
+}

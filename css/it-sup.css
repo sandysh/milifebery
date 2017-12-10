@@ -1,0 +1,66 @@
+label {
+  margin: 0;
+  line-height: 0;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+.grid .grid-col {
+  height: 370px;
+}
+
+.grid .grid-item {
+  background-color: #f2f4f3;
+  width: 100%;
+  text-align: center;
+}
+
+.grid .img-container {
+  display: block;
+  height: 91px;
+  width: 100%;
+  margin-top: 66px;
+}
+
+.grid:nth-child(2) .grid-col:first-child  .img-container { background: url(../images/it-sup1.png) no-repeat center; background-size: contain; }
+.grid:nth-child(2) .grid-col:nth-child(2) .img-container { background: url(../images/it-sup2.png) no-repeat center; background-size: contain; }
+.grid:nth-child(2) .grid-col:nth-child(3) .img-container { background: url(../images/it-sup3.png) no-repeat center; background-size: contain; }
+
+.grid:nth-child(3) .grid-col:first-child  .img-container { background: url(../images/it-sup4.png) no-repeat center; background-size: contain; }
+.grid:nth-child(3) .grid-col:nth-child(2) .img-container { background: url(../images/it-sup5.png) no-repeat center; background-size: contain; }
+.grid:nth-child(3) .grid-col:nth-child(3) .img-container { background: url(../images/it-sup6.png) no-repeat center; background-size: contain; }
+.grid:nth-child(4) .grid-col:first-child  .img-container { background: url(../images/it-sup7.png) no-repeat center; background-size: contain; }
+
+.grid .grid-item h4 {
+  margin-top: 52px;
+  color: #303030;
+  font-weight: 700;
+}
+
+.grid:nth-child(2) .grid-col:first-child:hover  .img-container { background: url(../images/it-sup1-hover.png) no-repeat center; background-size: contain; }
+.grid:nth-child(2) .grid-col:nth-child(2):hover .img-container { background: url(../images/it-sup2-hover.png) no-repeat center; background-size: contain; }
+.grid:nth-child(2) .grid-col:nth-child(3):hover .img-container { background: url(../images/it-sup3-hover.png) no-repeat center; background-size: contain; }
+
+.grid:nth-child(3) .grid-col:first-child:hover  .img-container { background: url(../images/it-sup4-hover.png) no-repeat center; background-size: contain; }
+.grid:nth-child(3) .grid-col:nth-child(2):hover .img-container { background: url(../images/it-sup5-hover.png) no-repeat center; background-size: contain; }
+.grid:nth-child(3) .grid-col:nth-child(3):hover .img-container { background: url(../images/it-sup6-hover.png) no-repeat center; background-size: contain; }
+.grid:nth-child(4) .grid-col:first-child:hover  .img-container { background: url(../images/it-sup7-hover.png) no-repeat center; background-size: contain; }
+
+
+
+
+
+.grid:nth-child(2) .grid-col:first-child:hover  .grid-item { background: #05d3ca; }
+.grid:nth-child(2) .grid-col:nth-child(2):hover .grid-item { background: #fff259; }
+.grid:nth-child(2) .grid-col:nth-child(3):hover .grid-item { background: #f26c4f; }
+
+.grid:nth-child(3) .grid-col:first-child:hover  .grid-item { background: #00a651; }
+.grid:nth-child(3) .grid-col:nth-child(2):hover .grid-item { background: #f68e56; }
+.grid:nth-child(3) .grid-col:nth-child(3):hover .grid-item { background: #ef4261; }
+.grid:nth-child(4) .grid-col:first-child:hover  .grid-item { background: #008cc7; }
+
+.grid .grid-col:hover h4 {
+  color: #fff;
+}

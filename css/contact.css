@@ -1,0 +1,77 @@
+/*////////////////////////////////
+Contact
+////////////////////////////////*/
+#contact-header { height: 300px; }
+
+form .col-md-6,
+form .col-md-12 {
+  padding-right: 20px;
+}
+
+#contact-details h3 {
+  margin-top: 10px;
+  color: #249aea;
+  font-weight: 400;
+}
+
+#contact-details a {
+  display: block;
+  font-size: 18px;
+  color: #838383;
+  margin: 25px 0 35px;
+  transition: all 0.25s ease 0s;
+}
+
+#contact-details a i {
+  padding-right: 10px;
+}
+
+#contact-details a:hover, #contact-details a:focus {
+  color: #303030;
+}
+
+#company-address .col-md-4 {
+  height: 580px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#company-address .bg {
+  z-index: 2;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: all 0.25s ease 0s;
+}
+
+#company-address .overlays {
+  padding: 35px;
+}
+
+#company-address .col-md-4:hover .bg{
+  opacity: 0.85;
+}
+
+#company-address .overlays h4 a {
+  display: block;
+  color: #838383;
+}
+
+#company-address .btn {
+  text-transform: uppercase;
+  color:  #ffffff;
+  background-color:  #249aea;
+  margin: 20px 0;
+  border: 0;
+}
+
+@media (min-width:320px) and (max-width:479px) {
+
+}
+
+@media (min-width:480px) and (max-width:767px) {
+  
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  
+}

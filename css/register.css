@@ -1,0 +1,8 @@
+select {
+  font-size: 18px;
+  width: 100%;
+}
+#contact_body label {
+  font-size: 18px;
+  padding: 20px 0px;
+}
