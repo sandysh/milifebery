@@ -2,4 +2,9 @@
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>MyLifeBery</name>
     <description>Milifebery official app</description>
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="" src="images/logo.png" />
+    </platform>
+
 </widget>
